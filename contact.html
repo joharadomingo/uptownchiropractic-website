@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>UptownChiropractic</title>
+
+  
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="user.css">
+
+   <link rel="icon" type="image/x-icon" href="faviconn.ico">
+</head>
+<body>
+
+    
+<header class="header">
+   
+    <section class="fles">
+    
+    <a href="index.php"><img src="img/cliniclogo.png" alt="" class="logoss"><h4></h4></a>
+    
+       <nav class="navbar">
+          <a href="index.php">Home</a>
+          <a href="index.php">About</a>
+          <a href="index.php">Appointment</a>
+          <a href="index.php">Services</a>
+          <a href="index.php">Feedback</a>
+          <a class="active" href="contact.html">Contact</a>
+          
+       </nav>
+    
+       <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+       </div>
+    </section>
+    </header>
+
+    <section class="contact-us" id="contact-us">
+        <div class="contact-container">
+            <h1 class="heading">Contact Us</h1>
+           <div class="contact-info">
+              <!-- Address Box -->
+               <div class="boxess address">
+                 <h3>Address</h3>
+                 <p>BF Resort Village, 134 Gloria Diaz, Las Piñas, 1747 Metro Manila</p>
+              </div>
+              
+              <!-- Working Hours Box -->
+              <div class="boxess working-hours">
+                 <h3>Working Hours</h3>
+                 <p>Monday - Friday 8am to 5pm</p>
+              </div>
+
+              
+              <!-- Contact Methods Box -->
+                  <div class="boxess contact-methods">
+                 <h3>Get in Touch</h3>
+                 <p><strong>Facebook:</strong> <a href="https://www.facebook.com/uptownchiropracticphilippines" target="_blank">Uptown Chiropractic</a></p>
+                 <p><strong>Email:</strong> <a href="mailto:uptownchiropractic.phils@gmail.com">uptownchiropractic.phils@gmail.com</a></p>
+                 <p><strong>Phone:</strong> <a href="tel:+639171537272">0917-153-7272</a></p>
+              </div>
+           </div>
+
+     
+                    <!-- Google Map Embed -->
+           <div class="map-container">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.756129877476!2d120.97902927514922!3d14.441212986026486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d189c37933f5%3A0x688ac81e3a8c08e2!2sUptown%20Chiropractic%20Philippines%20-%20Neurological%20and%20Informational%20Center!5e0!3m2!1sen!2sph!4v1742622882131!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+        </div>
+
+     </section>
+     
+    
+    <div class="credit">
+        &copy; copyright @ <?= date('Y'); ?> by <span>Uptown Chiropractic</span> | All rights reserved!
+     </div>
+
+     <script src="script.js"></script>
+     <script>
+        let navbar = document.querySelector('.header .fles .navbar');
+        let menuBtn = document.querySelector('#menu-btn');
+
+        menuBtn.onclick = () => {
+         navbar.classList.toggle('active'); // Toggle the active class to show/hide navbar
+} 
+     </script>
+
+</body>
+</html>
+    
